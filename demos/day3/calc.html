@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <div id='wrapper'>
+      <input id='name' type='text' />
+      <input id='greet' value='Greet me!' type='button' />
+    </div>
+    <script type="text/javascript">
+
+      var foo = document.getElementById("greet");
+
+      foo.onclick = function(){
+        var tb = document.getElementById("name");
+        alert(tb.value);
+      };
+
+    </script>
+  </body>
+</html>

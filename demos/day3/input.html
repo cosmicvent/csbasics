@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <div id='wrapper'>
+      <input id='first' type='text' />
+      <input id='second' type='text' />
+      <input id='sumButton' value='Sum' type='button' />
+    </div>
+    <script type="text/javascript">
+      alert(+"22" - +"33");
+      alert(22 - 33);
+      var first = document.getElementById("first");
+      var second = document.getElementById("second");
+      var sumButton = document.getElementById("sumButton");
+      sumButton.onclick = function(){
+        var sum = ( +first.value ) + ( +second.value );
+        alert(sum);
+      };
+    </script>
+  </body>
+</html>
