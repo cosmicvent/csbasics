@@ -1,0 +1,12 @@
+Core
+====
+ + A user should be able to create a note(title, body).
+ + A user should be able to view a list of saved notes.
+ + A user should be able to view the complete note(title, body) when he clicks on the title in the list page.
+ - A user should be able to delete a note.
+ - A user should be able to edit a note.
+ - Deploy the app
+
+Nice to have
+============
+ - A user should not be able to create a note without a title

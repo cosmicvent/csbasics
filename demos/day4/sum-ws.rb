@@ -40,6 +40,10 @@ get "/compute-age" do
   "<!doctype html><html><head><title>Calculator</title></head><body><h1>Calculator</h1><form method='post'>Enter date(1985-05-23):<input name='dob' type='text' /><input type='submit' value='Compute age' /></form></body></html>"
 end
 
+get "/dsum" do
+  "<form><input type='text' name='first' /><input type='text' /><input type='submit' value='Compute Sum' /></form>"
+end
+
 post "/compute-age" do
   tokens = params[:dob].split("-")
   age_text = compute_age(tokens[0].to_i, tokens[1].to_i, tokens[2].to_i)

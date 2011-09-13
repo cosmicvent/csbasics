@@ -1,0 +1,2 @@
+A little convention over configuration love.
+patch for foreman
