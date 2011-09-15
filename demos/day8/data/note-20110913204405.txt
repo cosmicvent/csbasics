@@ -1,2 +1,2 @@
-How to find the boundary co-ordinates from a given set of co-ordinates.
+How to find the boundary co-ordinates
 blah blah

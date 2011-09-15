@@ -6,10 +6,10 @@
   <%@notes.each  do |n| %>
     <tr>
       <td>
-        <a href='/show/<%=n[1]%>'><%=n[0]%></a>
+        <a href='/show/<%=n.id%>'><%=n.title%></a>
       </td>
       <td>
-        <a href='/edit/<%=n[1]%>' >Edit</a> | <a href='/delete/<%=n[1]%>' onclick='return confirmDelete();' >Delete</a><br />
+        <a href='/edit/<%=n.id%>' >Edit</a> | <a href='/delete/<%=n.id%>' onclick='return confirmDelete();' >Delete</a><br />
       </td>
     </tr>
   <%end%>
