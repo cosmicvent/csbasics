@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Note taking app</title>
+    <link href="/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id='wrapper'>
+      <div id='header'>
+        <h1>Awesome Noter</h1>
+      </div>
+      <div id='content'>
+        <div id='navigation'>
+          <a href='/'>Home</a>
+          <a href='/new'>Create a note</a>
+        </div>
+        <div id='page'><%= yield %></div>
+      </div>
+      <div id='footer'>Copyright &copy; 2009 | Notable app</div>
+    </div>
+  </body>
+</html>

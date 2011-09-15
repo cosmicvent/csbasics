@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <body>
+    <%=NAV%>
+    <%@notes.each  do |n| %>
+      <a href='/show/<%=n[1]%>'><%=n[0]%></a> --
+      <a href='/edit/<%=n[1]%>' >Edit</a> 
+      | <a href='/delete/<%=n[1]%>' onclick='return confirmDelete();' >Delete</a><br />
+    <%end%>
+    <script type="text/javascript">
+      function confirmDelete(){
+       return confirm("Do you really want to delete this note?");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<table cellspacing="0">
+  <tr>
+    <th>Title</th>
+    <th>Actions</th>
+  </tr>
+  <%@notes.each  do |n| %>
+    <tr>
+      <td>
+        <a href='/show/<%=n[1]%>'><%=n[0]%></a>
+      </td>
+      <td>
+        <a href='/edit/<%=n[1]%>' >Edit</a> | <a href='/delete/<%=n[1]%>' onclick='return confirmDelete();' >Delete</a><br />
+      </td>
+    </tr>
+  <%end%>
+</table>
+<script type="text/javascript">
+  function confirmDelete(){
+    return confirm("Do you really want to delete this note?");
+  }
+</script>
