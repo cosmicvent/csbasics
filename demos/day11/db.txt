@@ -1,0 +1,12 @@
+Notes
+=====
+id | title       | body
+1  | first       | balh blah blah
+2  | second note | is the last
+
+
+Users
+=====
+id | username | dob
+1  | jack     | 22 Jan
+2  | omar     | 23 Jul

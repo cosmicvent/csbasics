@@ -1,0 +1,15 @@
+<form method='post' onsubmit='return validateForm();'>
+  <input type='text' name='title' id='title' placeholder='Title' ><br />
+  <textarea name='body'></textarea><br />
+  <input type='submit' value='Create Note' />
+</form>
+<script type="text/javascript">
+  function validateForm(){
+    var titleElement = document.getElementById("title");
+    if(titleElement.value.length == 0){
+      alert("Please fill the title");
+      return false;
+    }
+    return true;
+  }
+</script>

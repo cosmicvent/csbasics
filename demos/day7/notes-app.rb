@@ -49,4 +49,3 @@ post '/edit/:timestamp' do
   file.close
   "#{NAV}saved the note '#{params[:title]}'."
 end
-
